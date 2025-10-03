@@ -33,8 +33,7 @@ Customer customer;
   while( numOfCustomers>0) { 
      occupiedTime=random.nextInt(5)+5;//in minutes
 
-    newName=random.ints(leftLimit, rightLimit+1).limit(targetStringLength).collect(StringBuilder::4new, StringBuilder::appendCodePoint, StringBuilder::append)
-      .toString();;
+  
      customer=new Customer(newName);
  }
  System.out.println("has entered the queue");
@@ -45,6 +44,6 @@ Customer customer;
 
 
 
-    }
+    
     
 }
