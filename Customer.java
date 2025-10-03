@@ -1,24 +1,24 @@
-public class Customer{
-    //Attributes
+public class Customer {
     String name;
-    static int customerId=1;
-    
-    
-    
-    //Constructors
-    public Customer(){
-        this.name="";
-        
+    int customerId;
+    int serviceTime;
+    static int nextId = 1;
+
+    public Customer(String name, int serviceTime) {
+        this.name = name;
+        this.serviceTime = serviceTime;
+        this.customerId = nextId++;
     }
-    public Customer(String name){
-        this.name=name;
-        this.customerId=customerId++;
-      
-        
+
+    public String getName() {
+        return name;
     }
-    
-    
-    
-    //Methods
-    
+
+    public int getId() {
+        return customerId;
+    }
+
+    public int getServiceTime() {
+        return serviceTime;
+    }
 }

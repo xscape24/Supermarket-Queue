@@ -1,29 +1,22 @@
 public class Cashier {
-    //Attributes
     String name;
-    static int cashierId;
+    int cashierId;
     boolean isOccupied;
-    CashierQueue queue;
-    
-    
-    
-    //Constructors
-    public Cashier(){
-        
+
+    public Cashier(String name, int cashierId) {
+        this.name = name;
+        this.cashierId = cashierId;
+        this.isOccupied = false;
     }
-    
-    public Cashier (String name, int cashierId){
-        this.name=name;
-        this.cashierId=cashierId;
-        cashierId++;
-        
+
+    public void serveCustomer(Customer c) {
+        isOccupied = true;
+        System.out.println("Cashier " + name + " (ID: " + cashierId + ") is serving "
+                           + c.getName() + " (Customer " + c.getId() 
+                           + ") for " + c.getServiceTime() + " minutes.");
+        try {
+            Thread.sleep(1000);
+        } catch(Exception e) {}
+        isOccupied = false;
     }
-    //Methods
-    
-    public void entersLine(){
-        
-    }
-    
-    
-    
 }

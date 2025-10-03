@@ -1,19 +1,33 @@
-
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-
 public class CashierQueue {
-    //Attributes
-    Queue<Customer> queue=new LinkedList<Customer>();
+    Queue<Customer> queue;
     int queueNumber;
-    
-    
-    
-    //Methods
-    
-    
-    
-    
+
+    public CashierQueue(int queueNumber) {
+        this.queue = new LinkedList<>();
+        this.queueNumber = queueNumber;
+    }
+
+    public void addCustomer(Customer customer) {
+        queue.add(customer);
+        System.out.println(customer.getName() + " (Customer " + customer.getId() 
+                           + ") has joined Queue #" + queueNumber);
+    }
+
+    public Customer getNextCustomer() {
+        if (!queue.isEmpty()) {
+            return queue.poll();
+        }
+        return null;
+    }
+
+    public int getQueueSize() {
+        return queue.size();
+    }
+
+    public boolean isEmpty() {
+        return queue.isEmpty();
+    }
 }
