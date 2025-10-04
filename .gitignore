@@ -1,0 +1,12 @@
+*.class
+*.log
+*.ctxt
+hs_err_pid*
+replay_pid*
+
+
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
