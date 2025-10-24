@@ -23,7 +23,7 @@ This project simulates a supermarket environment where multiple cashiers serve i
 ---
 
 ## Setup Instructions
-1. Clone the repository: `git clone https://github.com/xscape24/Supermarket-Simulator.git`.
+1. Clone the repository: `git clone https://github.com/xscape24/Supermarket-Queue.git`.
 
 2. Open the project in a Java IDE.
 
