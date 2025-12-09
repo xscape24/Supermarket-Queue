@@ -1,0 +1,9 @@
+{
+"runId":"run_001",
+"numCashiers":4,
+"numCustomers":50,
+"averageWait":15.16,
+"averageService":8.07,
+"totalServed":50,
+"wallSeconds":0.11
+}

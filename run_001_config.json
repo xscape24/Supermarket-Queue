@@ -1,0 +1,8 @@
+{
+"runId":"run_001",
+"numCashiers":4,
+"numCustomers":50,
+"meanService":8.0,
+"meanInterarrival":2.0,
+"seed":12345
+}
